@@ -8,8 +8,10 @@ def position_taken?(board, index)
 end
 
 def valid_move?(index)
-  if index.between(0,8)
-    position_taken(board,index)
+  if index.between(0,8) == true
+    if position_taken(board,index) ==true
+      true
+    end
   else
     puts"Enter valid number!"
   end
