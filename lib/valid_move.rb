@@ -7,6 +7,14 @@ def position_taken?(board, index)
   end
 end
 
+def valid_move?(index)
+  if index.between?(0,8) == true
+    if position_taken?(board,index)==true
+      true
+    end
+  end
+end
+
 
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
